@@ -1,1 +1,39 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css");
+
+body {
+    background-color: #000022;
+    color: #d4dbb4;
+}
+
+.torol,
+.allapot {
+    cursor: pointer;
+}
+
+tr:nth-child(even).fuggoben td {
+    background-color: #005b00;
+}
+
+tr:nth-child(odd).fuggoben td {
+    background-color: #004b00;
+}
+
+tr:nth-child(even).kesz td {
+    background-color: #5b0000;
+}
+
+tr:nth-child(odd).kesz td {
+    background-color: #4b0000;
+}
+
+.fuggoben .allapot::after {
+    content: "✓";
+    font-weight: bold;
+    color: green;
+}
+
+.kesz .allapot::after {
+    content: "✗";
+    font-weight: bold;
+    color: red;
+}
